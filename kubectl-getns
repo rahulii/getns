@@ -1,0 +1,14 @@
+#!/bin/bash
+
+function help(){
+    echo "Use getns with restype and resname for eg kubectl getns pod pod-0"
+    exit 1
+}
+
+if [ $# -ne 2 ]
+then
+    help
+fi
+
+kubectl get $1 --all-namespaces  -ojsonpath="{.items[?(@.metadata.name=='$2')].metadata.namespace}"
+
