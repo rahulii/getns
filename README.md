@@ -14,3 +14,6 @@ Then add this file to the PATH.
 eg:
 kubectl getns serive kubernetes
 ```
+Resources:
+ - https://kubernetes.io/docs/tasks/extend-kubectl/kubectl-plugins/
+ - https://www.youtube.com/watch?v=fN8s52gkkTk&list=PLh4KH3LtJvRRcSwTZgmW60lkhVrzKU1jA&index=9
